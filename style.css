@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+}
+body{
+    overflow-x: hidden;
+    background: var(--background);
+}
+:root{
+    --black: #141415;
+    --darkblue: #1B2948;
+    --red: #dc1111; /*#dc3545*/
+    --blue:#007bff;
+    --background: #fff;
+}
+
+/*--------- SKEW ---------*/
+.skew-abajo{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    border-width:  0 0 10vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent var(--darkblue) transparent;
+}
+.skew-arriba{
+    position: relative;
+    top: 0;
+    left: 0;
+    border-width: 10vh 100vw 0 0;
+    border-style: solid;
+    border-color:  var(--darkblue) transparent transparent transparent;
+    z-index: 10;
+}
+.skew-main{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width:  0 0 10vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent var(--background) transparent;
+}
+
+/*--------- HEADER ---------*/
+.header{
+    position: relative;
+    width: 100vw;
+    height: auto;
+}
+.navbar{
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    z-index: 900;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    /*FONDO DEL MENU AL BAJAR*/
+
+    /*background-color: var(--black);
+    border-bottom: 2px solid var(--red);*/
+}
+.navbar img{
+    width: 90px;
+    margin: 15px 100px 0 50px;
+}
+nav{
+    width: 60%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.menus{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration: none;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.menus:hover{
+    background: #fff;
+    color: var(--black);
+    transition: all ease .8s;
+}
+#contacto{
+    /*AL BAJAR*/
+    background: var(--red);
+}
+
+/*-------- BANNER ---------*/
+.banner-header{
+    width: 100vw;
+    height: 100vh;
+
+    background:url(./imagenesprueba/file.jpg);
+    background-position-x: right;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*opacity: 0.7;
+    z-index: -1;*/
+}
+.banner-content{
+    position: relative;
+    top: 30vh;
+
+    width: 70%;
+    height: 50%;
+    margin: 0 auto;
+
+    /* CODIGO INUTIL -- TEXT Y BUTTON ESTAN EN ABSOLUTE
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;*/
+
+    margin: auto;
+}
+.opacity{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+}
+.banner-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: auto;
+    color: #fff;
+}
+.span-banner{
+    color:var(--red);
+    font-weight: 600;
+    /*border-bottom: 2px solid var(--red);*/
+}
+.banner-text h1{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    color: var(--red);
+    font-size: 50px;
+    font-weight: 100000;
+    font-style: normal;
+}
+.span-h1{
+    color: #fff;
+    font-size: 30px;
+}
+.banner-text p{
+    font-size: 28px;
+    margin: 10px auto;
+    letter-spacing: 1,5px;
+    line-height: 130%;
+}
+/*.span-banner{
+}*/
+.banner-button{
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+
+    padding: 18px 35px;
+    background: var(--red);
+    border:4px solid #d01124;
+}
+.banner-button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/*-------- MAIN ---------*/
+/*.section-content{
+    width: 75%;
+    height: auto;
+    margin: 20px auto;
+}*/
+
+
+.sections{
+    margin: 70px auto;    
+}
+
+.content-sections{
+    width: 75%;
+
+    height: auto;
+    margin: auto
+}
+.sections h3{
+    text-align: center;
+    font-size:45px;
+    font-weight: normal;
+    letter-spacing: 15px;
+    border-bottom: 1px solid var(--black);
+
+    color: var(--red);
+    margin-bottom: 20px;
+}
+.content-sections p{
+    font-size: 30px;
+    font-weight: 300;
+    text-align:auto ; /***/
+    line-height: 150%;
+}
+
+/*--------- contenido ---------*/
+#servicios p{
+    margin: 0 0 0 30px;
+}.servicios-list{
+    margin:30px 0 0 50px;
+    font-size: 25px;
+}.servicios-list li{
+    margin: 5px 0;
+}
+
+
+#nosotros-main{
+    background: var(--darkblue);
+    color: #fff;
+    width: 100vw;
+    margin: 0 auto; /*NO BORRAR - el margin top y bottom corre los skew*/
+}#nosotros-main p{
+    padding-bottom: 30px;
+}.span-main{
+    color: var(--red);
+}
+
+/*--------- CONTACTO ---------*/
+.contacto{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.contact-form{
+    width: 100%;
+}
+.contact-info{
+    background-color: var(--black);
+}
+.contact-form .form-input{
+    margin: 30px 0 0 0px;
+}
+.contact-form .form-input label{
+    display: block;
+    margin: 10px 0;
+    padding-left: 5px;
+    color: var(--red);
+    font-size: 18px;
+    font-weight: bold;
+}
+.contact-form .form-input input{
+    width: 80%;
+    height: 30px;
+
+    border: none;
+    border-bottom: var(--red) 2px solid;
+    border-left: var(--red) 2px solid;
+    border-right: var(--red) 2px solid;
+}
+.contact-form .form-input input:focus{
+    border: none;
+}
+.contact-form .form-input textarea{
+    width: 90%;
+    height: 100px;
+    max-width: 90%;
+    max-height: auto;
+    margin-bottom: 30px;
+
+    border-radius: 5px;
+    border: 2px solid var(--red);
+}
+/*--------- FOOTER ---------*/
+footer{
+    width: 100vw;
+    margin-top: 50px;
+    font-size: 15px;
+    color: #fff;
+    background: black;
+}
+.footer-content{
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+}
+.span-footer{
+    color: var(--red);
+    font-size: 18px;
+}
+.footer-content a{
+    color: #fff;
+}
