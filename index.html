@@ -25,17 +25,17 @@
                 <div class="logo logo-sticky"></div>
     
                 <nav class="nav">
-                    <a href="" class="menus" id="home">HOME</a>
-                    <a href="" class="menus" id="proyectos">PROYECTOS</a>
-                    <a href="" class="menus" id="sevicios">SERVICIOS</a>
-                    <a href="" class="menus" id="nosotros">NOSOTROS</a>
-                    <a href="" class="menus" id="contacto">CONTACTO</a>
+                    <a href="#inicio" class="menus" id="home">HOME</a>
+                    <a href="#proyec" class="menus" id="proyectos">PROYECTOS</a>
+                    <a href="#serv" class="menus" id="sevicios">SERVICIOS</a>
+                    <a href="#nos" class="menus" id="nosotros">NOSOTROS</a>
+                    <a href="#contact" class="menus" id="contacto">CONTACTO</a>
                 </nav>
             </div>
     
             <!--------- BANNER ----------->
     
-            <div class="banner-header">
+            <div class="banner-header" id="inicio">
                 <div class="opacity">
                     <div class="banner-content">
                         <div class="banner-text">
@@ -58,7 +58,7 @@
 
         <main class="main">
             <!--<div class="section-content">-->
-                <section class="sections" id="servicios">
+                <section class="sections" id="serv">
                     <div class="content-sections">
                         <h3>NUESTROS SERVICIOS</h3>
                         <p>Trabajamos con todo tipo de servicios, como por ejemplo: 
@@ -84,7 +84,7 @@
                     </div>
                 </section>
     
-                <div class="skew-abajo"></div>
+                <div class="skew-abajo" id="nos"></div>
                 <section class="sections" id="nosotros-main">
                     <div class="content-sections">
                         <h3>NOSOTROS</h3>
@@ -97,14 +97,80 @@
                 </section>
                 <div class="skew-arriba"></div>
     
-                <section class="sections">
+                <section class="sections" id="proyec">
                     <div class="content-sections">
                         <h3>NUESTRO TRABAJO</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quod beatae, dolore culpa nam quas? Esse tempore cum ducimus natus ipsam mollitia fuga, architecto deleniti cumque quos error alias quod.</p>
+                        <div class="trabajosGaleria">
+                            <div class="containerGaleria">
+                              <div class="card">
+                                <div class="card-image">
+                                  <a href="#" data-fancybox="gallery" data-caption="Caption Images 1">
+                                    <img src="./imagenes/img1.png" alt="Image Gallery">
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-image">
+                                  <a href="" data-fancybox="gallery" data-caption="Caption Images 1">
+                                    <img src="./imagenes/img2.png" alt="Image Gallery">
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-image">
+                                  <a href="" data-fancybox="gallery" data-caption="Caption Images 1">
+                                    <img src="./imagenes/img3.png" alt="Image Gallery">
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-image">
+                                  <a href="" data-fancybox="gallery" data-caption="Caption Images 1">
+                                    <img src="./imagenes/img4.png" alt="Image Gallery">
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-image">
+                                  <a href="" data-fancybox="gallery" data-caption="Caption Images 1">
+                                    <img src="./imagenes/img5.png" alt="Image Gallery">
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-image">
+                                  <a href="" data-fancybox="gallery" data-caption="Caption Images 1">
+                                    <img src="./imagenes/img6.png" alt="Image Gallery">
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-image">
+                                  <a href="" data-fancybox="gallery" data-caption="Caption Images 1">
+                                    <img src="./imagenes/img7.png" alt="Image Gallery">
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-image">
+                                  <a href="" data-fancybox="gallery" data-caption="Caption Images 1">
+                                    <img src="./imagenes/img8.png" alt="Image Gallery">
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-image">
+                                  <a href="" data-fancybox="gallery" data-caption="Caption Images 1">
+                                    <img src="./imagenes/img9.png" alt="Image Gallery">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </main>
                     </div>
                 </section>
     
-                <section class="sections">
+                <section class="sections" id="contact">
                     <div class="content-sections">
                         <h3>CONTACTANOS</h3>
                         
@@ -129,7 +195,7 @@
                                     <label for="input-text">Mensaje</label>
                                     <textarea name="mensaje" id="input-text"></textarea>
                                 </div>
-                                <button type="submit" name="submit">Enviar</button>
+                                <button id="button" type="submit"></button>
                             </form>
     
                             <div class="contact-info">

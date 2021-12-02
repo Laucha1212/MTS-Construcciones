@@ -334,3 +334,122 @@ footer{
     -moz-transition: 0.3s all ease-in-out;    /* added unit */
     -webkit-transition: 0.3s all ease-in-out; /* added unit */
   }
+
+
+  .containerGaleria {
+    max-width: 80rem;
+    width: 100%;
+    padding: 4rem 2rem;
+    margin: 0 auto;
+  }
+
+  .trabajosGaleria .containerGaleria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .trabajosGaleria .card {
+    color: #252a32;
+    border-radius: 2px;
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+  }
+  .trabajosGaleria .card-image {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top: 70%;
+    background: #ffffff;
+  }
+  .trabajosGaleria .card-image img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .trabajosGaleria .containerGaleria {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+    }
+  }
+
+  
+button {
+    outline: none;
+    height: 40px;
+    text-align: center;
+    width: 130px;
+    border-radius: 40px;
+    background: #fff;
+    border: 2px solid #dc1c2f;
+    color: #dc1c2f;
+    letter-spacing: 1px;
+    text-shadow: 0;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+  button:hover {
+    color: white;
+    background: #dc1c2f;
+  }
+  button:active {
+    letter-spacing: 2px;
+  }
+  button:after {
+    content: "ENVIAR";
+  }
+  
+  .onclic {
+    width: 40px;
+    border-color: #bbbbbb;
+    border-width: 3px;
+    font-size: 0;
+    border-left-color: #dc1c2f;
+    -webkit-animation: rotating 2s 0.25s linear infinite;
+            animation: rotating 2s 0.25s linear infinite;
+  }
+  .onclic:after {
+    content: "";
+  }
+  .onclic:hover {
+    color: #dc1c2f;
+    background: white;
+  }
+  
+  .validate {
+    font-size: 13px;
+    color: white;
+    background: #dc1c2f;
+  }
+  .validate:after {
+    font-family: "FontAwesome";
+    content: "";
+  }
+  
+  @-webkit-keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
