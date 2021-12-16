@@ -11,7 +11,7 @@ body{
 :root{
     --black: #141415;
     --darkblue: #1B2948;
-    --red: #dc1c2f; /*#dc3545*/
+    --red: #dc1111; /*#dc3545*/
     --blue:#007bff;
     --background: #fff;
 }
@@ -49,9 +49,9 @@ body{
     width: 100vw;
     height: auto;
 }
-.nav-bar{
+.navbar{
     width: 100%;
-    height: 90px;
+    height: 65px;
     position: fixed;
     z-index: 900;
 
@@ -61,16 +61,13 @@ body{
     flex-wrap: nowrap;
 
     /*FONDO DEL MENU AL BAJAR*/
-    background: rgba(20, 20, 21, 0.1);
-    /*border-bottom: 2px solid var(--red);*/
+
+    /*background-color: var(--black);
+    border-bottom: 2px solid var(--red);*/
 }
-.logo {
-    background-image: url("./imagenes/logomts_preview_rev_1.png");
-    width: 110px;
-    margin: -25px 0px 0 50px;
-    background-size: cover;
-    background-position: center;
-    height:100px;
+.navbar img{
+    width: 90px;
+    margin: 15px 100px 0 50px;
 }
 nav{
     width: 60%;
@@ -84,7 +81,6 @@ nav{
 .menus{
     width: 100%;
     height: 100%;
-    margin: 0 1px;
     color: #fff;
     font-weight: 700;
     font-size: 17px;
@@ -101,13 +97,17 @@ nav{
     color: var(--black);
     transition: all ease .8s;
 }
+#contacto{
+    /*AL BAJAR*/
+    background: var(--red);
+}
 
 /*-------- BANNER ---------*/
 .banner-header{
     width: 100vw;
     height: 100vh;
 
-    background:url(./imagenes/file.jpg);
+    background:url(./imagenesprueba/file.jpg);
     background-position-x: right;
     background-position-y: center;
     background-size: cover;
@@ -118,7 +118,7 @@ nav{
 }
 .banner-content{
     position: relative;
-    top: 20vh;
+    top: 30vh;
 
     width: 70%;
     height: 50%;
@@ -140,7 +140,7 @@ nav{
 }
 .banner-text{
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 50%;
     height: auto;
@@ -157,7 +157,7 @@ nav{
     border-bottom: 1px solid #000;
     color: var(--red);
     font-size: 50px;
-    font-weight: 400;
+    font-weight: 100000;
     font-style: normal;
 }
 .span-h1{
@@ -170,9 +170,11 @@ nav{
     letter-spacing: 1,5px;
     line-height: 130%;
 }
+/*.span-banner{
+}*/
 .banner-button{
     position: absolute;
-    bottom: 0;
+    bottom: 15px;
     right: 0;
 
     padding: 18px 35px;
@@ -184,10 +186,12 @@ nav{
     text-decoration: none;
 }
 
-#contacto{
-    /*AL BAJAR*/
-    background: var(--red);
-}
+/*-------- MAIN ---------*/
+/*.section-content{
+    width: 75%;
+    height: auto;
+    margin: 20px auto;
+}*/
 
 
 .sections{
@@ -304,152 +308,3 @@ footer{
 .footer-content a{
     color: #fff;
 }
-
-/* --- just for demo --- */
-.navbar-fixed-top {
-    position: fixed;
-    width: 100%;
-    line-height: 20px;
-  }
-  .navbar-fixed-top-sticky {
-    line-height: 80px;
-  }
-  /* --- just for demo --- */
-  .logo-sticky
-  {
-    transition: background-image 0.2s ease-in-out;
-    background-image: url("./imagenes/logomts_preview_rev_1.png");
-  }
-  .navbar-fixed-top {
-    height: 90px;                             /* default height */
-    transition: 0.3s all ease;                /* added unit */
-    -moz-transition: 0.3s all ease;           /* added unit */
-    -webkit-transition: 0.3s all ease;        /* added unit */
-  }
-  .navbar-fixed-top-sticky {
-    background: rgba(20, 20, 21, 1);
-    border-bottom: 2px solid var(--red);
-    height: 90px;
-    transition: 0.3s all ease-in-out;         /* added unit */
-    -moz-transition: 0.3s all ease-in-out;    /* added unit */
-    -webkit-transition: 0.3s all ease-in-out; /* added unit */
-  }
-
-
-  .containerGaleria {
-    max-width: 80rem;
-    width: 100%;
-    padding: 4rem 2rem;
-    margin: 0 auto;
-  }
-
-  .trabajosGaleria .containerGaleria {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-    justify-content: center;
-    align-items: center;
-  }
-  .trabajosGaleria .card {
-    color: #252a32;
-    border-radius: 2px;
-    background: #ffffff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
-  }
-  .trabajosGaleria .card-image {
-    position: relative;
-    display: block;
-    width: 100%;
-    padding-top: 70%;
-    background: #ffffff;
-  }
-  .trabajosGaleria .card-image img {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .trabajosGaleria .containerGaleria {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-gap: 1rem;
-    }
-  }
-
-  
-button {
-    outline: none;
-    height: 40px;
-    text-align: center;
-    width: 130px;
-    border-radius: 40px;
-    background: #fff;
-    border: 2px solid #dc1c2f;
-    color: #dc1c2f;
-    letter-spacing: 1px;
-    text-shadow: 0;
-    font-size: 12px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.25s ease;
-  }
-  button:hover {
-    color: white;
-    background: #dc1c2f;
-  }
-  button:active {
-    letter-spacing: 2px;
-  }
-  button:after {
-    content: "ENVIAR";
-  }
-  
-  .onclic {
-    width: 40px;
-    border-color: #bbbbbb;
-    border-width: 3px;
-    font-size: 0;
-    border-left-color: #dc1c2f;
-    -webkit-animation: rotating 2s 0.25s linear infinite;
-            animation: rotating 2s 0.25s linear infinite;
-  }
-  .onclic:after {
-    content: "";
-  }
-  .onclic:hover {
-    color: #dc1c2f;
-    background: white;
-  }
-  
-  .validate {
-    font-size: 13px;
-    color: white;
-    background: #dc1c2f;
-  }
-  .validate:after {
-    font-family: "FontAwesome";
-    content: "";
-  }
-  
-  @-webkit-keyframes rotating {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  @keyframes rotating {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
