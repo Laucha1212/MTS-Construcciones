@@ -453,3 +453,42 @@ button {
       transform: rotate(360deg);
     }
   }
+
+  .topnav {
+    overflow: hidden;
+  }
+  
+  .topnav .icon {
+    display: none;    
+  }
+
+  .topnav .icon{
+    color:#fff;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+      padding: 30px 30px 0 0;
+    }
+    .topnav {
+      display: block;
+    }    
+  }
+  
+  @media screen and (max-width: 900px) {
+    .nav.topnav.responsive {position: relative; }
+    .nav.topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav.topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      font-size: 12px;
+    }
+  }

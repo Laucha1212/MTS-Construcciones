@@ -1,3 +1,12 @@
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "nav topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav topnav";
+  }
+}
+
 $(window).scroll(function() {
     if( $(this).scrollTop() > 50 ) {
         $('.navbar-fixed-top').addClass("navbar-fixed-top-sticky");
@@ -19,6 +28,8 @@ $(document).ready(function() {
       return false;
     });
     
+    
+
     $(function() {
         $( "#button" ).click(function() {
           $( "#button" ).addClass( "onclic", 250, validate);
