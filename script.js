@@ -8,7 +8,7 @@ function myFunction() {
 }
 
 $(window).scroll(function() {
-    if( $(this).scrollTop() > 50 ) {
+    if( $(this).scrollTop() > 100 ) {
         $('.navbar-fixed-top').addClass("navbar-fixed-top-sticky");
     } else {
         $('.navbar-fixed-top').removeClass("navbar-fixed-top-sticky");
