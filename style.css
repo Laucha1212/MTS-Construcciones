@@ -497,30 +497,137 @@ button {
   .topnav .icon{
     color:#fff;
   }
+
+ 
   
   @media screen and (max-width: 900px) {
-    .topnav a {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-      padding: 30px 30px 0 0;
+     nav {
+       width:80%;
+     }
+  }
+
+  @media screen and (max-width:700px) {
+    .menus {
+      font-size:12px;
+      letter-spacing: 2px;
     }
-    .topnav {
-      display: block;
-    }    
+  }
+
+  @media screen and (max-width:630px) {
+    .logo{
+      width:100px;
+      margin:-25px 0 0 10px;
+    }
+  }
+
+  @media screen and (max-width:630px) {
+    .menus:first-child{
+      display: none;
+    }
+    
   }
   
-  @media screen and (max-width: 900px) {
-    .nav.topnav.responsive {position: relative; }
-    .nav.topnav.responsive .icon {
+  
+  @media screen and (max-width:500px) {
+    .nav-bar .navbar-fixed-top{
+      display:block;
+    }
+
+    .logo {
       position: absolute;
-      right: 0;
-      top: 0;
+      right:37%;
+      margin:-35px 0 0 10px;
     }
-    .nav.topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-      font-size: 12px;
+    
+    nav{
+      left:0.5%;
+      position: absolute;
+      top:70%;
+      width: 100%;
+    }
+
+    .menus{
+      margin:0;
+      height:auto;
+      margin-top:-60px;
     }
   }
+
+  @media screen and (max-width:370px) {
+    .menus:not(:last-child){
+      display: none;
+    }
+
+    .topnav .icon {
+      display: block;
+      position: absolute;
+      right:0;
+      margin:35px 30px 0 0;
+      top:0;
+    }
+
+    .topnav .icon i{
+      font-size:20px;
+    }
+
+    .logo{
+      right:70%;
+    }
+
+    nav{
+      width: 100%;    
+      top:0;
+    }
+
+    .responsive .menus{
+      display: block;
+      position: absolute;
+      margin: 0;
+      height: auto;
+    }
+  
+    .responsive .menus:not(:first-child){
+      display: block;
+    }
+
+    .responsive #proyectos {
+      top:75%;
+    }
+
+    .responsive #servicios {
+      top:100%;
+    }
+
+    .responsive #nosotros {
+      top:125%;
+    }
+
+    .responsive #contacto {
+      top:150%;
+    }
+
+
+    .banner-button{
+      display: none;
+    }
+
+    .banner-header{
+      height: 120vh;
+    }
+
+    .banner-text{
+      width:90%;
+    }
+
+    .banner-text h1{
+      font-size: 35px;
+    }
+
+    .banner-text p{
+      font-size: 20px;
+    }
+  }
+  
+
+
+  

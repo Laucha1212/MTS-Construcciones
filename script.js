@@ -1,3 +1,4 @@
+
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "nav topnav") {
@@ -8,7 +9,7 @@ function myFunction() {
 }
 
 $(window).scroll(function() {
-    if( $(this).scrollTop() > 100 ) {
+    if( $(this).scrollTop() > 10 ) {
         $('.navbar-fixed-top').addClass("navbar-fixed-top-sticky");
     } else {
         $('.navbar-fixed-top').removeClass("navbar-fixed-top-sticky");
