@@ -147,9 +147,10 @@ nav{
     color: #fff;
 }
 .span-banner{
-    color:var(--red);
+    color:#fff;
     font-weight: 600;
-    /*border-bottom: 2px solid var(--red);*/
+    background:var(--red);
+    padding:3px;
 }
 .banner-text h1{
     width: 100%;
@@ -236,7 +237,9 @@ nav{
 }#nosotros-main p{
     padding-bottom: 30px;
 }.span-main{
-    color: var(--red);
+  padding: 3px;
+  background: var(--red);
+  color: #fff;
 }
 
 /*--------- CONTACTO ---------*/
@@ -511,6 +514,15 @@ button {
       font-size:12px;
       letter-spacing: 2px;
     }
+
+    .contacto{
+      display:block;      
+    }
+
+    #width-gallery-contact
+    {
+      width: 90%;
+    }
   }
 
   @media screen and (max-width:630px) {
@@ -527,7 +539,13 @@ button {
     
   }
   
-  
+  @media screen and (max-width:600px) {
+    #contact h3
+    {
+      font-size: 30px;
+    }
+  }
+
   @media screen and (max-width:500px) {
     .nav-bar .navbar-fixed-top{
       display:block;
@@ -553,7 +571,17 @@ button {
     }
   }
 
+  @media screen and (max-width:440px) {
+    #contact h3{
+      font-size: 25px;
+    }
+  }
+
   @media screen and (max-width:370px) {
+    #contact h3{
+      font-size: 20px;    
+    }
+
     .menus:not(:last-child){
       display: none;
     }
@@ -571,7 +599,7 @@ button {
     }
 
     .logo{
-      right:70%;
+      right:67%;
     }
 
     nav{
@@ -612,7 +640,7 @@ button {
     }
 
     .banner-header{
-      height: 120vh;
+      height: 90vh;
     }
 
     .banner-text{
@@ -625,6 +653,14 @@ button {
 
     .banner-text p{
       font-size: 20px;
+    }
+
+    .sections h3{
+      font-size:30px;
+    }
+
+    .sections p, li{
+      font-size:20px;
     }
   }
   
